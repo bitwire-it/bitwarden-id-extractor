@@ -7,7 +7,7 @@ Quickly extract and copy the itemId from the Bitwarden Web Vault URL.
 
 ## instruction
 - Download the [ZIP](https://github.com/bitwire-it/bitwarden-id-extractor/archive/refs/heads/main.zip) and extract the folder
-- Open Google Chrome and go to chrome://extensions/.
+- Open Google Chrome and go to [chrome://extensions/](chrome://extensions/)
 - Enable Developer mode using the toggle switch in the top right corner.
 - Click the Load unpacked button that appears.
 - Select your bw-id-extractor folder.
