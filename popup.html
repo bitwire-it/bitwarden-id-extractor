@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        width: 300px;
+        padding: 15px;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        background-color: #f8f9fa;
+        color: #333;
+      }
+      h3 {
+        margin: 0 0 10px 0;
+        font-size: 16px;
+        color: #175ddc; /* Bitwarden Blue-ish */
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+      }
+      input[type="text"] {
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-family: monospace;
+        font-size: 13px;
+        background: white;
+        color: #555;
+      }
+      button {
+        padding: 8px 12px;
+        background-color: #175ddc;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-weight: 600;
+        transition: background-color 0.2s;
+      }
+      button:hover {
+        background-color: #124cb1;
+      }
+      button:disabled {
+        background-color: #ccc;
+        cursor: default;
+      }
+      #status {
+        font-size: 12px;
+        margin-top: 5px;
+        height: 1.2em;
+        color: #28a745;
+        font-weight: 500;
+      }
+      .error {
+        color: #dc3545 !important;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>Bitwarden ID</h3>
+    <div class="container">
+      <input type="text" id="idDisplay" readonly placeholder="Scanning URL..." />
+      <button id="copyBtn">Copy to Clipboard</button>
+      <div id="status"></div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>

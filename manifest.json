@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "Bitwarden Item ID Extractor",
+  "version": "1.0",
+  "description": "Quickly extract and copy the itemId from the Bitwarden Web Vault URL.",
+  "permissions": [
+    "activeTab",
+    "clipboardWrite"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Copy Bitwarden ID"
+  },
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
